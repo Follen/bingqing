@@ -1,0 +1,110 @@
+<!DOCTYPE HTML>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+	<title>专属你的仪式感</title>
+	<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+	<style type="text/css">
+		@font-face {
+			font-family: digit;
+			src: url('digital-7_mono.ttf') format("truetype");
+		}
+	</style>
+	<link href="css/default.css" type="text/css" rel="stylesheet">
+	<script type="text/javascript" src="js/jquery.js"></script>
+	<script type="text/javascript" src="js/garden.js"></script>
+    <script type="text/javascript" src="js/functions.js"></script>
+</head>
+
+<body>
+<!-- <audio src="" autoplay="autoplay" loop="loop"></audio>-->
+	<div id="mainDiv">
+		<div id="content">
+			<div id="code">
+				<span class="space"/><span class="comments">枂枂，现在是2022.5.28日，20:45分</span><br />	
+				<span class="space"/><span class="comments">此时此刻，我写下了这篇独白</span><br />	
+				<span class="space"/><span class="comments">你打开的这个网站，是只属于我们两个地方</span><br />	
+				<span class="space"/><span class="comments">这里不像摆满蜡烛和鲜花的广场，也不像转瞬既逝的一两句表白情话</span><br />	
+				<span class="space"/><span class="comments">更像是一座石碑，将永远的立在互联网历史的一个不为人知的角落里</span><br />	
+				<span class="space"/><span class="comments">也希望我们之间可以像这个网站一样，历久弥新</span><br />	
+				<span class="space"/><span class="comments"></span><br />	
+				<span class="space"/><span class="comments">人生之中，你总会与一些人遇到</span><br />	
+				<span class="space"/><span class="comments">但悲伤又幸运的事情是，大部分的人都无法走进自己生命里哪怕一点点</span><br />	
+				<span class="space"/><span class="comments">悲伤的是大家一直在寻找，或者被寻找的路上</span><br />	
+				<span class="space"/><span class="comments">幸运的是，遇见你。我找到了不在寻找的希望</span><br />	
+				<span class="space"/><span class="comments">初遇时，你给人留下的印象更像一个古灵精怪的小姑娘</span><br />	
+				<span class="space"/><span class="comments">本着打发时间，和与人为善的原则。我和你的世界线开始交错</span><br />	
+				<span class="space"/><span class="comments">但真正认识你，其实是在我和你一声声曹贼宝宝枂枂宝宝</span><br />	
+				<span class="space"/><span class="comments">这期间，不得不让人由衷感叹。</span><br />	
+				<span class="space"/><span class="comments">遇到一个三观经过碰撞还能互相认可的人，属实不易</span><br />	
+				<span class="space"/><span class="comments">最让人觉得奇妙的事情，虽然只是经过了几天</span><br />	
+				<span class="space"/><span class="comments">我们之间的沟通深刻到，好像两人是一个陪伴了几年的好友</span><br />	
+				<span class="space"/><span class="comments">而在这个过程中，我也被你身上的特征深深的吸引</span><br />	
+				<span class="space"/><span class="comments">果然遇到吸引自己的人，就真的会上瘾</span><br />	
+				<span class="space"/><span class="comments">期间，真的让我意识到我很喜欢你的时候</span><br />	
+				<span class="space"/><span class="comments">在我小心试探的时候，你的坦然和诚实</span><br />	
+				<span class="space"/><span class="comments">我已经很久很久，没有因为一个人的某句话感到难过了</span><br />	
+				<span class="space"/><span class="comments">“这样的人，只要用心对她好就够了吧”</span><br />	
+				<span class="space"/><span class="comments">我这样想着</span><br />	
+				<span class="space"/><span class="comments">索性，我们的时间还很长很长</span><br />	
+				<span class="space"/><span class="comments">虽然我不知道可以和你走多远</span><br />	
+				<span class="space"/><span class="comments">但我自信可以用细致，忠诚，有仪式感，浪漫，填满我和你的感情</span><br />	
+				<span class="space"/><span class="comments">所以，我想我....</span><br />	
+				<span class="space"/><span class="comments">会义务反顾，会尽力，会用心</span><br />	
+				<span class="space"/><span class="comments">不知道，你的答案是？</span><br />	
+
+		
+
+			</div>
+			<div id="loveHeart">
+				<canvas id="garden"></canvas>
+				<div id="words">
+					<div id="messages">
+						I have fallen in love with you for
+						<div id="elapseClock"></div>
+					</div>
+					<div id="loveu">
+						Love u forever and ever.<br/>
+						<div class="signature">-Kai</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div id="copyright">
+			Copyright © 2022 <a href='https://gongzikai.com'>Kai</a>
+		</div>
+	</div>
+	<script type="text/javascript">
+		var offsetX = $("#loveHeart").width() / 2;
+		var offsetY = $("#loveHeart").height() / 2 - 55;
+		var together = new Date();
+		together.setFullYear(2022, 4, 28 );
+		together.setHours(20);
+		together.setMinutes(45);
+		together.setSeconds(0);
+		together.setMilliseconds(0);
+		
+		if (!document.createElement('canvas').getContext) {
+			var msg = document.createElement("div");
+			msg.id = "errorMsg";
+			msg.innerHTML = "Your browser doesn't support HTML5!<br/>Recommend use Chrome 14+/IE 9+/Firefox 7+/Safari 4+"; 
+			document.body.appendChild(msg);
+			$("#code").css("display", "none")
+			$("#copyright").css("position", "absolute");
+			$("#copyright").css("bottom", "10px");
+		    document.execCommand("stop");
+		} else {
+			setTimeout(function () {
+				startHeartAnimation();
+			}, 5000);
+
+			timeElapse(together);
+			setInterval(function () {
+				timeElapse(together);
+			}, 500);
+
+			adjustCodePosition();
+			$("#code").typewriter();
+		}
+	</script>
+</body>
+</html>
